@@ -1,0 +1,175 @@
+*
+{
+  padding:0;
+  margin:0;
+  font-family: Pompadur, 'Comic Sans MS', cursive;
+  color: white;
+  user-select: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; height: 100vh;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.header>.nickname{
+  display: flex;
+  border-radius: 21px;
+  border: 6px solid rgb(255, 153, 0);
+  background-color: rgb(208, 125, 0);
+  padding: 10px 25px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+  font-size: 5em;
+}
+
+.main_box{
+  display: flex;
+  border-radius: 21px;
+  border: 6px solid rgb(255, 153, 0);
+  background-color: rgb(208, 125, 0);
+  padding: 10px 25px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_box>div{
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  font-size: 3em;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+.button{
+  display: flex;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 2px;
+  font-size: 21px;
+}
+
+.button[id="1"]{
+  border-radius: 10px 0 0 10px;
+}
+
+.button[id="3"]{
+  border-radius: 0 10px 10px 0;
+}
+
+.button:active{
+  border-color: rgba(255, 130, 0, 1);
+}
+
+.button:hover{
+  background-color: rgba(0, 0, 0, 0.21);
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.links[id="category1"]{
+  display: none;
+}
+
+.links[id="category1"]:target{
+  display: flex;
+}
+
+.links[id="category2"]{
+  display: none;
+}
+
+.links[id="category2"]:target{
+  display: flex;
+}
+
+.links[id="category3"]{
+  display: none;
+}
+
+.links[id="category3"]:target{
+  display: flex;
+}
+
+.link{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.logo{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.links[id="category1"]>.link[id="1"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/yt.png");
+}
+
+.links[id="category1"]>.link[id="2"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/twitch.png");
+}
+
+.links[id="category1"]>.link[id="3"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/vk.png");
+}
+
+.links[id="category1"]>.link[id="4"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/discord.png");
+}
+
+.links[id="category1"]>.link[id="5"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/steam.png");
+}
+
+.links[id="category2"]>.link[id="1"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/vk.png");
+}
+
+.links[id="category2"]>.link[id="2"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/wajm.png");
+}
+
+.links[id="category2"]>.link[id="3"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/socialclub.png");
+}
+
+.links[id="category3"]>.link[id="1"]>.logo{
+  width: 50px; height: 50px;
+  background-image: url("img/da.png");
+}
